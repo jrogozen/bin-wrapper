@@ -1,11 +1,10 @@
 'use strict';
 var fs = require('fs');
 var path = require('path');
-var lazyReq = require('lazy-req')(require);
-var binCheck = lazyReq('bin-check');
-var binVersionCheck = lazyReq('bin-version-check');
-var Download = lazyReq('download');
-var osFilterObj = lazyReq('os-filter-obj');
+var binCheck = require('bin-check');
+var binVersionCheck = require('bin-version-check');
+var Download = require('download');
+var osFilterObj = require('os-filter-obj');
 
 /**
  * Initialize a new `BinWrapper`
